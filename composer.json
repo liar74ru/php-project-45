@@ -1,0 +1,26 @@
+{
+    "name": "hexlet/code",
+    "version": "0.0.1",
+    "bin": [
+        "bin/brain-games"
+    ],
+    "authors": [
+        {
+            "name": "Vladimir Kipriyanov",
+            "email": "liar2707@gmail.com"
+        }
+    ],
+    "description": "hexlet php-package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hexlet\\Code\\Tests\\": "tests/"
+        }
+    },
+    "require": {}
+}
