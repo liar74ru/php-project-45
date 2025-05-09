@@ -1,7 +1,8 @@
 {
     "name": "hexlet/code",
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-event"
     ],
     "authors": [
         {
@@ -13,10 +14,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "BrainGames\\Cli\\": "src/"
+            "BrainGames\\Cli\\": "src/",
+            "BrainGames\\even\\": "src/"
         },
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/even.php"
         ]
     },
     "require": {
