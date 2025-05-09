@@ -20,3 +20,5 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=liar74ru_php-project-45&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=liar74ru_php-project-45)
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=liar74ru_php-project-45&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=liar74ru_php-project-45)
+
+[![asciicast](https://asciinema.org/a/rQr1gX4Z93LaN5o1jKXX48sRd.svg)](https://asciinema.org/a/rQr1gX4Z93LaN5o1jKXX48sRd)
