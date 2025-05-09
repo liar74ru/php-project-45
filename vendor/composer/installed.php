@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'hexlet/code',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '802371eb60daba1e5cb03bebaa8d06896edb2441',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'hexlet/code' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '802371eb60daba1e5cb03bebaa8d06896edb2441',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
