@@ -1,0 +1,25 @@
+{
+    "name": "hexlet/code",
+    "bin": [
+        "bin/brain-games"
+    ],
+    "authors": [
+        {
+            "name": "Vladimir Kipriyanov",
+            "email": "liar2707@gmail.com"
+        }
+    ],
+    "description": "hexlet php-package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BrainGames\\Cli\\": "src/"
+        },
+        "files": [
+            "src/Cli.php"
+        ]
+    },
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.5"
+    }
+}
