@@ -2,10 +2,7 @@
 <?php
 
 require_once __DIR__ . '/../vendor/autoload.php';
-//require_once __DIR__ . '/../src/Cli.php';
 
-//use function cli\line;
-//use function cli\prompt;
 use function BrainGames\Cli\{getName, showName};
 use function BrainGames\even\gameEven;
 
@@ -15,4 +12,4 @@ $name = getName();               //Знакомимся с пользовате�
 echo showName($name);
 
 $round = 3;                      //Количество раундов игры
-echo gameEven($round, $name);
+echo gameEven($round, $name);    //Игра на четное или нечетное

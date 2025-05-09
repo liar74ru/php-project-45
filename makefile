@@ -11,5 +11,5 @@ run: # запустить игру
 brain-even: # запускаем игру 2
 	./bin/brain-even
 
-lint:
+lint: # проверка кода на коректность
 	composer exec --verbose phpcs -- --standard=PSR12 src bin

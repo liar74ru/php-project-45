@@ -7,7 +7,7 @@ use function cli\prompt;
 
 function gameEven($round, $name)
 {
-    line ('Answer %b"yes"%n %rif%n the number is even, otherwise answer %b"no"%n.'."\n");
+    line('Answer %b"yes"%n %rif%n the number is even, otherwise answer %b"no"%n.' . "\n");
     for ($i = 1; $i <= $round; $i++) {
         $n = rand(1, 100);
         $answer = prompt("Question: {$n}");
