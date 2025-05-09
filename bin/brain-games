@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/env php
 <?php
 
@@ -13,3 +14,10 @@ use function cli\prompt;
 echo "Welcome to the Brain Game!\n";
 $name = getName();
 echo showName($name);
+=======
+#!/usr/bin/env php
+<?php
+
+echo "php bin/brain-games.php \n";
+echo "Welcome to the Brain Games! \n";
+>>>>>>> 16e92cb9cad0506c9a3883e95d869274d27eaf4f

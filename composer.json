@@ -1,5 +1,9 @@
 {
     "name": "hexlet/code",
+<<<<<<< HEAD
+=======
+    "version": "0.0.1",
+>>>>>>> 16e92cb9cad0506c9a3883e95d869274d27eaf4f
     "bin": [
         "bin/brain-games"
     ],
