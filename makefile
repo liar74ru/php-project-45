@@ -7,3 +7,6 @@ validate: # проверить код на ошибки
 
 run: # запустить игру
 	./bin/brain-games
+
+lint:
+	composer exec --verbose phpcs -- --standard=PSR12 src bin

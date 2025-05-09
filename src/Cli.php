@@ -12,5 +12,5 @@ function getName(): string
 
 function showName(string $name)
 {
- return line("Hello, %s!", $name);
+return line("Hello, %s!", $name);
 }
