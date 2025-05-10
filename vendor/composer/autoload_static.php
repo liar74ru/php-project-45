@@ -8,24 +8,30 @@ class ComposerStaticInited6c0c0058bade5f030e3ec7f1827549
 {
     public static $files = array (
         'be01b9b16925dcb22165c40b46681ac6' => __DIR__ . '/..' . '/wp-cli/php-cli-tools/lib/cli/cli.php',
-        '4829b2fddb6a054e51fbedd69dcbc605' => __DIR__ . '/../..' . '/src/Cli.php',
-        'b77df96dbdd2ac583625400023a0eae7' => __DIR__ . '/../..' . '/src/even.php',
+        'eae205c370047ff1964f46c384fe2f6d' => __DIR__ . '/../..' . '/src/Game/Even.php',
+        '153b3f9a6ef915fed43292a3761aa01c' => __DIR__ . '/../..' . '/src/Engine.php',
+        '501d5aaa38d6364bf192c5668ffd7bfd' => __DIR__ . '/../..' . '/src/Game/Calc.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'B' => 
         array (
-            'BrainGames\\even\\' => 16,
-            'BrainGames\\Cli\\' => 15,
+            'BrainGames\\Even\\' => 16,
+            'BrainGames\\Engine\\' => 18,
+            'BrainGames\\Calc\\' => 16,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'BrainGames\\even\\' => 
+        'BrainGames\\Even\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'BrainGames\\Cli\\' => 
+        'BrainGames\\Engine\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+        'BrainGames\\Calc\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

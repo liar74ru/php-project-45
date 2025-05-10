@@ -4,6 +4,7 @@ namespace BrainGames\even;
 
 use function cli\line;
 use function cli\prompt;
+use function BrainGames\Engine\{getName, showName, congretName};
 
 function gameEven($round, $name)
 {

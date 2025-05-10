@@ -3,8 +3,8 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Engine\{getName, showName};
-use function BrainGames\Even\gameEven;
+use function BrainGames\Engine\{getName, showName, congretName};
+use function BrainGames\Calc\gameCalc;
 
 echo "Welcome to the Brain Game!\n";
 
@@ -12,4 +12,6 @@ $name = getName();               //Знакомимся с пользовате�
 echo showName($name);
 
 $round = 3;                      //Количество раундов игры
-echo gameEven($round, $name);    //Игра на четное или нечетное
+echo gameCalc($round, $name);    //Запуск игры "Калькулятор"
+
+
