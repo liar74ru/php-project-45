@@ -14,5 +14,8 @@ brain-even: # запускаем игру 1 четное не четное
 brain-calc: # запускаем игру 2 Калькулятор
 	./bin/brain-calc
 
+brain-gcd: # Запускаем игру 3 наибольший общий делитель
+	./bin/brain-gcd
+
 lint: # проверка кода на коректность
 	composer exec --verbose phpcs -- --standard=PSR12 src bin

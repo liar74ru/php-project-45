@@ -10,3 +10,6 @@
 
 Демонстрация ШАГ 6 Калькулятор
 [![asciicast](https://asciinema.org/a/iAJ880HqGwrVEc2vtJztBGMEO.svg)](https://asciinema.org/a/iAJ880HqGwrVEc2vtJztBGMEO)
+
+Демонстрация ШАГ 7 Поиск НОД
+[![asciicast](https://asciinema.org/a/JJqY9TC290ypY1fueAyhJkMin.svg)](https://asciinema.org/a/JJqY9TC290ypY1fueAyhJkMin)

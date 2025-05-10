@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'BrainGames\\Gcd\\' => array($baseDir . '/src'),
     'BrainGames\\Even\\' => array($baseDir . '/src'),
     'BrainGames\\Engine\\' => array($baseDir . '/src'),
     'BrainGames\\Calc\\' => array($baseDir . '/src'),

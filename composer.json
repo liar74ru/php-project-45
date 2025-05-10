@@ -2,7 +2,9 @@
     "name": "hexlet/code",
     "bin": [
         "bin/brain-games",
-        "bin/brain-event"
+        "bin/brain-event",
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "authors": [
         {
@@ -16,12 +18,14 @@
         "psr-4": {
             "BrainGames\\Even\\": "src/",
             "BrainGames\\Engine\\": "src/",
-            "BrainGames\\Calc\\": "src/"
+            "BrainGames\\Calc\\": "src/",
+            "BrainGames\\Gcd\\": "src/"
         },
         "files": [
             "src/Game/Even.php",
             "src/Engine.php",
-            "src/Game/Calc.php"
+            "src/Game/Calc.php",
+            "src/Game/Gcd.php"
         ]
     },
     "require": {

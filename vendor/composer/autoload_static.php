@@ -11,11 +11,13 @@ class ComposerStaticInited6c0c0058bade5f030e3ec7f1827549
         'eae205c370047ff1964f46c384fe2f6d' => __DIR__ . '/../..' . '/src/Game/Even.php',
         '153b3f9a6ef915fed43292a3761aa01c' => __DIR__ . '/../..' . '/src/Engine.php',
         '501d5aaa38d6364bf192c5668ffd7bfd' => __DIR__ . '/../..' . '/src/Game/Calc.php',
+        '1360c9992e8e091caed7158aeaa719cd' => __DIR__ . '/../..' . '/src/Game/Gcd.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'B' => 
         array (
+            'BrainGames\\Gcd\\' => 15,
             'BrainGames\\Even\\' => 16,
             'BrainGames\\Engine\\' => 18,
             'BrainGames\\Calc\\' => 16,
@@ -23,6 +25,10 @@ class ComposerStaticInited6c0c0058bade5f030e3ec7f1827549
     );
 
     public static $prefixDirsPsr4 = array (
+        'BrainGames\\Gcd\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'BrainGames\\Even\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
