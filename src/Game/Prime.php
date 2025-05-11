@@ -8,18 +8,20 @@ use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
 
 function Prime($randNumber)
 {
-    if ($randNumber <= 2) {
-            return 'no';
-    } elseif ($randNumber % 2 === 0) {
+    if ($randNumber < 2) {
+        return 'no';
+    } elseif ($randNumber === 2) {
         return 'yes';
+    } elseif ($randNumber % 2 === 0) {
+        return 'no';
     } else {
         for ($i = 3; $i <= sqrt($randNumber); $i += 2) {
             if ($randNumber % $i === 0) {
-                return 'yes';
+                return 'no';
             }
         }
     }
-    return 'no';
+    return 'yes';
 }
 
 function gamePrime($round, $name)
@@ -27,10 +29,10 @@ function gamePrime($round, $name)
     line('Answer "yes" %rif%n given number is prime. Otherwise answer "no".');
     for ($i = 1; $i <= $round; $i++) {
         $randNumber = rand(2, 50);                  # число для определения на простое
-        echo 'Question: ' . $randNumber;
+        echo "Question: {$randNumber}";
         $answer = prompt("\nYour answer");
         if ($answer === Prime($randNumber)) {
-            echo "Correct!\n";
+            line("Correct!");
         } else {
             return falseAnswerName($name, $answer, Prime($randNumber));
         }

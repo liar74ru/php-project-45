@@ -20,7 +20,7 @@ function gameGcd($round, $name)
             $randomNamber1 = $temp;
         }
         if ($answer == $randomNamber1) {
-            echo "Correct!\n";
+            line("Correct!");
         } else {
             return falseAnswerName($name, $answer, $randomNamber1);
         }

@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'BrainGames\\Games\\' => array($baseDir . '/src'),
     'BrainGames\\Engine\\' => array($baseDir . '/src'),
+    'BrainGames\\Cli\\' => array($baseDir . '/src'),
 );

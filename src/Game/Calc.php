@@ -8,7 +8,7 @@ use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
 
 function gameCalc($round, $name)
 {
-    line('What is the result of the expression?' . "\n");
+    line('What is the result of the expression?');
     for ($i = 1; $i <= $round; $i++) {
         $randomNamber1 = rand(1, 100);
         $randomNamber2 = rand(1, 100);
@@ -29,7 +29,7 @@ function gameCalc($round, $name)
         }
         $answer = prompt("Your answer");
         if ($answer == $result) {
-            echo "Correct!\n";
+            line("Correct!");
         } else {
             return falseAnswerName($name, $answer, $result);
         }

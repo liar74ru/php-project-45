@@ -10,6 +10,7 @@ class ComposerStaticInited6c0c0058bade5f030e3ec7f1827549
         'be01b9b16925dcb22165c40b46681ac6' => __DIR__ . '/..' . '/wp-cli/php-cli-tools/lib/cli/cli.php',
         'eae205c370047ff1964f46c384fe2f6d' => __DIR__ . '/../..' . '/src/Game/Even.php',
         '153b3f9a6ef915fed43292a3761aa01c' => __DIR__ . '/../..' . '/src/Engine.php',
+        '4829b2fddb6a054e51fbedd69dcbc605' => __DIR__ . '/../..' . '/src/Cli.php',
         '501d5aaa38d6364bf192c5668ffd7bfd' => __DIR__ . '/../..' . '/src/Game/Calc.php',
         '1360c9992e8e091caed7158aeaa719cd' => __DIR__ . '/../..' . '/src/Game/Gcd.php',
         '4cde5bc60eb0d32d600029a23e825e67' => __DIR__ . '/../..' . '/src/Game/Progression.php',
@@ -21,6 +22,7 @@ class ComposerStaticInited6c0c0058bade5f030e3ec7f1827549
         array (
             'BrainGames\\Games\\' => 17,
             'BrainGames\\Engine\\' => 18,
+            'BrainGames\\Cli\\' => 15,
         ),
     );
 
@@ -30,6 +32,10 @@ class ComposerStaticInited6c0c0058bade5f030e3ec7f1827549
             0 => __DIR__ . '/../..' . '/src',
         ),
         'BrainGames\\Engine\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+        'BrainGames\\Cli\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

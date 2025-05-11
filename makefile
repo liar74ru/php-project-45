@@ -5,7 +5,7 @@ install: # установить зависимости
 validate: # проверить код на ошибки
 	composer validate
 
-run: # запустить игру
+brain-games: # запустить игру
 	./bin/brain-games
 
 brain-even: # запускаем игру 1 четное не четное
