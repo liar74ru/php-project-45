@@ -23,7 +23,7 @@ function gameCalc($round, $name)
                 $result = $randomNamber1 - $randomNamber2;
                 break;
             case '3':
-                line("Question: {$randomNamber1} %r*%n {$randomNamber2}");
+                line("Question: {$randomNamber1} * {$randomNamber2}");
                 $result = $randomNamber1 * $randomNamber2;
                 break;
         }
