@@ -16,3 +16,6 @@
 
 Демонстрация ШАГ 8 Арифметическая прогрессия
 [![asciicast](https://asciinema.org/a/9zt5HW5aer9G6wcpeyBynLTuX.svg)](https://asciinema.org/a/9zt5HW5aer9G6wcpeyBynLTuX)
+
+Демонстрация ШАГ 9 Простое число
+[![asciicast](https://asciinema.org/a/MoImikMTL4exttq9WKCQkev0z.svg)](https://asciinema.org/a/MoImikMTL4exttq9WKCQkev0z)

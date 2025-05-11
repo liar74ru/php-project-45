@@ -24,7 +24,8 @@
             "src/Engine.php",
             "src/Game/Calc.php",
             "src/Game/Gcd.php",
-            "src/Game/Progression.php"
+            "src/Game/Progression.php",
+            "src/Game/Prime.php"
         ]
     },
     "require": {

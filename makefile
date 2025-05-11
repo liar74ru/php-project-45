@@ -20,5 +20,8 @@ brain-gcd: # Запускаем игру 3 наибольший общий де�
 brain-progression: # Запускаем игру 4 прогрессия
 	./bin/brain-progression
 
+brain-prime: # Запускаем игру 5 простое число
+	./bin/brain-prime
+
 lint: # проверка кода на коректность
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
