@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
 
-function Prime($randNumber)
+function prime($randNumber)
 {
     if ($randNumber < 2) {
         return 'no';
@@ -31,10 +31,10 @@ function gamePrime($round, $name)
         $randNumber = rand(2, 50);                  # число для определения на простое
         echo "Question: {$randNumber}";
         $answer = prompt("\nYour answer");
-        if ($answer === Prime($randNumber)) {
+        if ($answer === prime($randNumber)) {
             line("Correct!");
         } else {
-            return falseAnswerName($name, $answer, Prime($randNumber));
+            return falseAnswerName($name, $answer, prime($randNumber));
         }
     }
     return trueAnswerName($name);
