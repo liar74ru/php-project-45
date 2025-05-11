@@ -26,7 +26,7 @@ function Prime($randNumber)
 
 function gamePrime($round, $name)
 {
-    line('Answer "yes" %rif%n given number is prime. Otherwise answer "no".');
+    line('Answer "yes" if given number is prime. Otherwise answer "no".');
     for ($i = 1; $i <= $round; $i++) {
         $randNumber = rand(2, 50);                  # число для определения на простое
         echo "Question: {$randNumber}";
