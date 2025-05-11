@@ -8,7 +8,7 @@ use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
 
 function gameEven($round, $name)
 {
-    line('Answer yes if the number is even, otherwise answer "no".');
+    line('Answer "yes" if the number is even, otherwise answer "no".');
     for ($i = 1; $i <= $round; $i++) {
         $randomNamber1 = rand(1, 100);
         $answer = prompt("Question: {$randomNamber1}");
