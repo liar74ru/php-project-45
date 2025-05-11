@@ -3,8 +3,8 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Engine\{getName, showName, congretName};
-use function BrainGames\Games\gameCalc;
+use function BrainGames\Engine\{getName, showName};
+use function BrainGames\Games\gameProgression;
 
 echo "Welcome to the Brain Game!\n";
 
@@ -12,6 +12,4 @@ $name = getName();               //Знакомимся с пользовате�
 echo showName($name);
 
 $round = 3;                      //Количество раундов игры
-echo gameCalc($round, $name);    //Запуск игры "Калькулятор"
-
-
+echo gameProgression($round, $name);    //Запуск игры "Арефмитическая прогресия"

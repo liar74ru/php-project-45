@@ -11,4 +11,5 @@ return array(
     '153b3f9a6ef915fed43292a3761aa01c' => $baseDir . '/src/Engine.php',
     '501d5aaa38d6364bf192c5668ffd7bfd' => $baseDir . '/src/Game/Calc.php',
     '1360c9992e8e091caed7158aeaa719cd' => $baseDir . '/src/Game/Gcd.php',
+    '4cde5bc60eb0d32d600029a23e825e67' => $baseDir . '/src/Game/Progression.php',
 );

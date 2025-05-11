@@ -22,5 +22,6 @@ function trueAnswerName($name)
 
 function falseAnswerName($name, $answer, $result)
 {
-    return line("%b'{$answer}'%n is wrong answer ;%b(%n%r.%n Correct answer was %b%w'{$result}'%n%r.%n" . "\nLet's %btry again, {$name}!%n");
+    return line("%b'{$answer}'%n is wrong answer ;%b(%n%r.%n Correct answer was %b'{$result}'%n%r.%n" .
+     "\nLet's %btry again, {$name}!%n");
 }

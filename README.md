@@ -13,3 +13,6 @@
 
 Демонстрация ШАГ 7 Поиск НОД
 [![asciicast](https://asciinema.org/a/JJqY9TC290ypY1fueAyhJkMin.svg)](https://asciinema.org/a/JJqY9TC290ypY1fueAyhJkMin)
+
+Демонстрация ШАГ 8 Арифметическая прогрессия
+[![asciicast](https://asciinema.org/a/9zt5HW5aer9G6wcpeyBynLTuX.svg)](https://asciinema.org/a/9zt5HW5aer9G6wcpeyBynLTuX)

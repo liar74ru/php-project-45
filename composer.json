@@ -16,16 +16,15 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "BrainGames\\Even\\": "src/",
             "BrainGames\\Engine\\": "src/",
-            "BrainGames\\Calc\\": "src/",
-            "BrainGames\\Gcd\\": "src/"
+            "BrainGames\\Games\\": "src/"
         },
         "files": [
             "src/Game/Even.php",
             "src/Engine.php",
             "src/Game/Calc.php",
-            "src/Game/Gcd.php"
+            "src/Game/Gcd.php",
+            "src/Game/Progression.php"
         ]
     },
     "require": {

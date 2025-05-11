@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\even;
+namespace BrainGames\Games;
 
 use function cli\line;
 use function cli\prompt;

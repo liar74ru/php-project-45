@@ -4,7 +4,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use function BrainGames\Engine\{getName, showName};
-use function BrainGames\Even\gameEven;
+use function BrainGames\Games\gameEven;
 
 echo "Welcome to the Brain Game!\n";
 

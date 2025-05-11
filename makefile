@@ -17,5 +17,8 @@ brain-calc: # запускаем игру 2 Калькулятор
 brain-gcd: # Запускаем игру 3 наибольший общий делитель
 	./bin/brain-gcd
 
+brain-progression: # Запускаем игру 4 прогрессия
+	./bin/brain-progression
+
 lint: # проверка кода на коректность
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
