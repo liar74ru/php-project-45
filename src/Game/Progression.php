@@ -8,7 +8,7 @@ use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
 
 function gameProgression($round, $name)
 {
-    line('What number is missing %rin%n the progression?');
+    line('What number is missing in the progression?');
     for ($i = 1; $i <= $round; $i++) {
         $randLengthProg = rand(5, 10);                  # количество членов прогрессии
         $randMissingIndex = rand(1, $randLengthProg);       # номер искомого члена прогрессии
