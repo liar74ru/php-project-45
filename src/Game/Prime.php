@@ -35,7 +35,7 @@ function gamePrime(int $round, string $name): void
             line("Correct!");
         } else {
             falseAnswerName($name, $answer, prime($randNumber));
-            return; 
+            return;
         }
     }
     trueAnswerName($name);
