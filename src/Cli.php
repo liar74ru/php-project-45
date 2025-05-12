@@ -10,7 +10,7 @@ function getName(): string
     return prompt('May I have your name?');
 }
 
-function showName(string $name): string
+function showName(string $name): void
 {
-    return line("Hello, %s!", $name);
+    line("Hello, %s!", $name);
 }
