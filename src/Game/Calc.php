@@ -32,7 +32,7 @@ function gameCalc(int $round, string $name): void
         if ($answer === $result) {
             line("Correct!");
         } else {
-            falseAnswerName($name, $answer, $result);
+            falseAnswerName($name, (string) $answer, (string) $result);
             return;
         }
     }

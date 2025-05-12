@@ -15,6 +15,7 @@ function gameProgression(int $round, string $name): void
         $randStepProg = rand(2, 5);                     # шаг прогрессии
         $randStartProg = rand(2, 15);                   # Первый член прогрессии
         $current = $randStartProg;
+        $answerNumber = 0;
         echo 'Question: ';
         for ($y = 1; $y <= $randLengthProg; $y++) {
             if ($y === $randMissingIndex) {
@@ -29,7 +30,7 @@ function gameProgression(int $round, string $name): void
         if ($answer === (string) $answerNumber) {
             line("Correct!");
         } else {
-            falseAnswerName($name, $answer, $answerNumber);
+            falseAnswerName($name, $answer, (string) $answerNumber);
             return;
         }
     }

@@ -14,7 +14,7 @@ function gameGcd(int $round, string $name): void
         $randomNamber2 = rand(1, 100);
         line("Question: {$randomNamber1} {$randomNamber2}");
         $answer = prompt("Your answer");
-        while ($randomNamber2 != 0) {
+        while ($randomNamber2 !== 0) {
             $temp = $randomNamber2;
             $randomNamber2 = $randomNamber1 % $randomNamber2;
             $randomNamber1 = $temp;
@@ -22,7 +22,7 @@ function gameGcd(int $round, string $name): void
         if ($answer === (string) $randomNamber1) {
             line("Correct!");
         } else {
-            falseAnswerName($name, $answer, $randomNamber1);
+            falseAnswerName($name, $answer, (string) $randomNamber1);
             return ;
         }
     }

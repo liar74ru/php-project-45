@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
 
-function prime($randNumber): string
+function prime(int $randNumber): string
 {
     if ($randNumber < 2) {
         return 'no';
