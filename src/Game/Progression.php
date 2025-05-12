@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
 
-function gameProgression($round, $name)
+function gameProgression(int $round, string $name): void
 {
     line('What number is missing in the progression?');
     for ($i = 1; $i <= $round; $i++) {
@@ -17,7 +17,7 @@ function gameProgression($round, $name)
         $current = $randStartProg;
         echo 'Question: ';
         for ($y = 1; $y <= $randLengthProg; $y++) {
-            if ($y == $randMissingIndex) {
+            if ($y === $randMissingIndex) {
                 $answerNumber = $current;
                 echo '.. ';
             } else {
@@ -26,11 +26,12 @@ function gameProgression($round, $name)
             $current += $randStepProg;
         }
         $answer = prompt("\nYour answer");
-        if ($answer == $answerNumber) {
+        if ($answer === (string) $answerNumber) {
             line("Correct!");
         } else {
-            return falseAnswerName($name, $answer, $answerNumber);
+            falseAnswerName($name, $answer, $answerNumber);
+            return;
         }
     }
-    return trueAnswerName($name);
+    trueAnswerName($name);
 }

@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
 
-function prime($randNumber)
+function prime($randNumber): string
 {
     if ($randNumber < 2) {
         return 'no';
@@ -24,7 +24,7 @@ function prime($randNumber)
     return 'yes';
 }
 
-function gamePrime($round, $name)
+function gamePrime(int $round, string $name): void
 {
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
     for ($i = 1; $i <= $round; $i++) {
@@ -34,8 +34,9 @@ function gamePrime($round, $name)
         if ($answer === prime($randNumber)) {
             line("Correct!");
         } else {
-            return falseAnswerName($name, $answer, prime($randNumber));
+            falseAnswerName($name, $answer, prime($randNumber));
+            return; 
         }
     }
-    return trueAnswerName($name);
+    trueAnswerName($name);
 }

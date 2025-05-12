@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
 
-function gameEven($round, $name)
+function gameEven(int $round, string $name): void
 {
     line('Answer "yes" if the number is even, otherwise answer "no".');
     for ($i = 1; $i <= $round; $i++) {
@@ -16,8 +16,9 @@ function gameEven($round, $name)
             line("Correct!");
         } else {
             $answerTrue = ($randomNamber1 % 2) === 0 ? 'yes' : 'no';
-            return falseAnswerName($name, $answer, $answerTrue);
+            falseAnswerName($name, $answer, $answerTrue);
+            return;
         }
     }
-    return trueAnswerName($name);
+    trueAnswerName($name);
 }

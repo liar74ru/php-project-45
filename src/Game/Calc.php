@@ -6,33 +6,35 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
 
-function gameCalc($round, $name)
+function gameCalc(int $round, string $name): void
 {
     line('What is the result of the expression?');
     for ($i = 1; $i <= $round; $i++) {
         $randomNamber1 = rand(1, 100);
         $randomNamber2 = rand(1, 100);
         $randomOper = rand(1, 3);
+        $result = 0;
         switch ($randomOper) {
-            case '1':
+            case 1:
                 line("Question: {$randomNamber1} + {$randomNamber2}");
                 $result = $randomNamber1 + $randomNamber2;
                 break;
-            case '2':
+            case 2:
                 line("Question: {$randomNamber1} - {$randomNamber2}");
                 $result = $randomNamber1 - $randomNamber2;
                 break;
-            case '3':
+            case 3:
                 line("Question: {$randomNamber1} * {$randomNamber2}");
                 $result = $randomNamber1 * $randomNamber2;
                 break;
         }
-        $answer = prompt("Your answer");
-        if ($answer == $result) {
+        $answer = (int) prompt("Your answer");
+        if ($answer === $result) {
             line("Correct!");
         } else {
-            return falseAnswerName($name, $answer, $result);
+            falseAnswerName($name, $answer, $result);
+            return; 
         }
     }
-    return trueAnswerName($name);
+    trueAnswerName($name);
 }

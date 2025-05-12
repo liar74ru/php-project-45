@@ -10,17 +10,17 @@ function getName(): string
     return prompt('May I have your name?');
 }
 
-function showName(string $name)
+function showName(string $name): void
 {
-    return line("Hello, %s!", $name);
+    line("Hello, %s!", $name);
 }
 
-function trueAnswerName($name)
+function trueAnswerName(string $name): void
 {
-    return line("Congratulations, %s!", $name);
+    line("Congratulations, %s!", $name);
 }
 
-function falseAnswerName($name, $answer, $result)
+function falseAnswerName(string $name, string $answer, string $result): void
 {
     line("'{$answer}' is wrong answer ;(. Correct answer was '{$result}'.");
     line("Let's try again, {$name}!");

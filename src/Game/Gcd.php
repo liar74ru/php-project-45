@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
 
-function gameGcd($round, $name)
+function gameGcd(int $round, string $name): void
 {
     line('Find the greatest common divisor of given numbers.');
     for ($i = 1; $i <= $round; $i++) {
@@ -19,11 +19,12 @@ function gameGcd($round, $name)
             $randomNamber2 = $randomNamber1 % $randomNamber2;
             $randomNamber1 = $temp;
         }
-        if ($answer == $randomNamber1) {
+        if ($answer === (string) $randomNamber1) {
             line("Correct!");
         } else {
-            return falseAnswerName($name, $answer, $randomNamber1);
+            falseAnswerName($name, $answer, $randomNamber1);
+            return ;
         }
     }
-    return trueAnswerName($name);
+    trueAnswerName($name);
 }
