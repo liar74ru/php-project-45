@@ -5,7 +5,7 @@ namespace BrainGames\Games;
 use function BrainGames\Engine\runGame;
 
 // Функция для проверки, является ли число простым
-function isPrime(int $randNumber): string
+function isPrime(int $randNumber): bool
 {
     if ($randNumber < 2) {
         return false;
