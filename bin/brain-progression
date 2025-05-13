@@ -3,6 +3,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Games\gameProgression;
+use function BrainGames\Games\playGameProgression;
 
-gameProgression();    // Запуск игры "Арифметическая прогрессия"
+playGameProgression();    // Запуск игры "Арифметическая прогрессия"

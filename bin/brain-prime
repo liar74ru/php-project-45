@@ -3,6 +3,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Games\gamePrime;
+use function BrainGames\Games\playGamePrime;
 
-gamePrime();    //Запуск игры "Арефмитическая прогресия"
+playGamePrime();    // Запуск игры "Определение простого числа"

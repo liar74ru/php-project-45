@@ -3,6 +3,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Games\gameGcd;
+use function BrainGames\Games\playGameGcd;
 
-gameGcd();    //Запуск игры "Поиск наибольшего общего делителя"
+playGameGcd();    // Запуск игры "Поиск наибольшего общего делителя"

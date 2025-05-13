@@ -2,39 +2,45 @@
 
 namespace BrainGames\Games;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\Engine\{trueAnswerName, getAnswerAndVerify, getShowName};
+use function BrainGames\Engine\runGame;
 
-function prime(int $randNumber): string            // функция для определения простого числа
+// Функция для проверки, является ли число простым
+function isPrime(int $randNumber): string
 {
     if ($randNumber < 2) {
-        return 'no';
-    } elseif ($randNumber === 2) {
-        return 'yes';
-    } elseif ($randNumber % 2 === 0) {
-        return 'no';
-    } else {
-        for ($i = 3; $i <= sqrt($randNumber); $i += 2) {
-            if ($randNumber % $i === 0) {
-                return 'no';
-            }
+        return false;
+    }
+    if ($randNumber === 2) {
+        return true;
+    }
+    if ($randNumber % 2 === 0) {
+        return false;
+    }
+
+    $limit = (int) sqrt($randNumber);
+    for ($i = 3; $i <= $limit; $i += 2) {
+        if ($randNumber % $i === 0) {
+            return false;
         }
     }
-    return 'yes';
+    return true;
 }
 
-function gamePrime(int $round = 3): void                // Задаем количество раундов по умолчанию = 3
+// Функция для генерации раунда игры "Простое число"
+function generatePrimeRound(): array
 {
-    $name = getShowName();                             // Знакомимся с пользователем и приветствуем его
+    $randomNumber = rand(1, 100);
+    $result = isPrime($randomNumber) ? 'yes' : 'no';
+    $question = (string) $randomNumber;
+    return [$question, $result];
+}
 
-    line('Answer "yes" if given number is prime. Otherwise answer "no".');
-    for ($i = 1; $i <= $round; $i++) {
-        $randNumber = rand(2, 50);                    // число для определения на простое
-        line("Question: {$randNumber}");
-        if (!getAnswerAndVerify($name, prime($randNumber))) {   // проверяем ответ пользователя и выводим результат
-            return;
-        }
-    }
-    trueAnswerName($name);         // поздравляем пользователя в случае победы
+// Функция для запуска игры "Простое число"
+function playGamePrime(): void
+{
+    $description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+    runGame($description, function () {
+        return generatePrimeRound();
+    });
 }

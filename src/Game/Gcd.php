@@ -2,27 +2,26 @@
 
 namespace BrainGames\Games;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\Engine\{trueAnswerName, getAnswerAndVerify, getShowName};
+use function BrainGames\Engine\runGame;
 
-function gameGcd(int $round = 3): void                   // Задаем количество раундов по умолчанию = 3
+function generateGcdRound(): array
 {
-    $name = getShowName();                               // Знакомимся с пользователем и приветствуем его
-
-    line('Find the greatest common divisor of given numbers.');
-    for ($i = 1; $i <= $round; $i++) {
-        $randomNamber1 = rand(1, 100);
-        $randomNamber2 = rand(1, 100);
-        line("Question: {$randomNamber1} {$randomNamber2}");
-        while ($randomNamber2 !== 0) {
-            $temp = $randomNamber2;
-            $randomNamber2 = $randomNamber1 % $randomNamber2;
-            $randomNamber1 = $temp;
-        }
-        if (!getAnswerAndVerify($name, (string) $randomNamber1)) {   // проверяем ответ пользователя и выводим результат
-            return;
-        }
+    $randomNumber1 = rand(1, 100);
+    $randomNumber2 = rand(1, 100);
+    $question = "{$randomNumber1} {$randomNumber2}";
+    while ($randomNumber2 !== 0) {
+        $result = $randomNumber2;
+        $randomNumber2 = $randomNumber1 % $randomNumber2;
+        $randomNumber1 = $result;
     }
-    trueAnswerName($name);        // поздравляем пользователя в случае победы
+    return [$question, (string) $result];
+}
+
+function playGameGcd(): void
+{
+    $description = 'Find the greatest common divisor of given numbers.';
+
+    runGame($description, function () {
+        return generateGcdRound();
+    });
 }
