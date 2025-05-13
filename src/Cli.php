@@ -7,7 +7,7 @@ use function cli\prompt;
 
 function getShowName(): string               // Знакомимся с пользователем и приветствуем его
 {
-    line("Welcome to the Brain Game!");
+    line("Welcome to the Brain Games!");
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     return $name;
