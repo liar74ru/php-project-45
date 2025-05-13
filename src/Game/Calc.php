@@ -31,7 +31,7 @@ function gameCalc(int $round = 3): void                       // Задаем к
                 $result = $randomNamber1 * $randomNamber2;
                 break;
         }
-        if (!getAnswerAndVerify($name, $result)) {          // проверяем ответ пользователя и выводим результат
+        if (!getAnswerAndVerify($name, (string) $result)) {          // проверяем ответ пользователя и выводим результат
             return;
         }
     }
