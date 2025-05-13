@@ -4,11 +4,14 @@ namespace BrainGames\Games;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Engine\{trueAnswerName, falseAnswerName};
+use function BrainGames\Engine\{trueAnswerName, getAnswerAndVerify, getShowName};
 
-function gameCalc(int $round, string $name): void
+function gameCalc(int $round = 3): void                       // Задаем количество раундов по умолчанию = 3
 {
-    line('What is the result of the expression?');
+
+    $name = getShowName();                               // Знакомимся с пользователем и приветствуем его
+
+    line("What is the result of the expression?");
     for ($i = 1; $i <= $round; $i++) {
         $randomNamber1 = rand(1, 100);
         $randomNamber2 = rand(1, 100);
@@ -28,13 +31,9 @@ function gameCalc(int $round, string $name): void
                 $result = $randomNamber1 * $randomNamber2;
                 break;
         }
-        $answer = (int) prompt("Your answer");
-        if ($answer === $result) {
-            line("Correct!");
-        } else {
-            falseAnswerName($name, (string) $answer, (string) $result);
+        if (!getAnswerAndVerify($name, $result)) {          // проверяем ответ пользователя и выводим результат
             return;
         }
     }
-    trueAnswerName($name);
+    trueAnswerName($name);       // поздравляем пользователя в случае победы
 }

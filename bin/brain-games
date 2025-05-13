@@ -3,8 +3,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Cli\{getName, showName};
+use function BrainGames\Cli\getShowName;
 
-echo "Welcome to the Brain Games!\n";
-$name = getName();
-echo showName($name);
+getShowName();   //Знакомимся с пользователем и приветствуем его

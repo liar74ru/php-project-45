@@ -17,11 +17,6 @@
     "description": "hexlet php-package",
     "license": "MIT",
     "autoload": {
-        "psr-4": {
-            "BrainGames\\Engine\\": "src/",
-            "BrainGames\\Cli\\": "src/",
-            "BrainGames\\Games\\": "src/"
-        },
         "files": [
             "src/Game/Even.php",
             "src/Engine.php",
