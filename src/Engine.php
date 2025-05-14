@@ -6,13 +6,15 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Cli\getShowName;
 
-function runGame(string $description, callable $generateRound, int $round = 3): void
+const ROUNDS_COUNT = 3; // Количество раундов
+
+function runGame(string $description, callable $generateRound): void
 {
-    $name = getShowName();
+    $name = getShowName(); // Получаем имя пользователя и приветствуем его
 
     line($description);
 
-    for ($i = 0; $i < $round; $i++) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         [$question, $correctAnswer] = $generateRound();
 
         line("Question: {$question}");
