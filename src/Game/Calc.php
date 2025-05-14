@@ -17,7 +17,7 @@ function generateCalcRound(): array
     // Генерация пустого вопроса и ответа
     $result = null;
     $question = '';
-    
+    // Генерация вопроса и ответа в зависимости от операции
     switch ($randomOper) {
         case '+':
             $question = "{$randomNumber1} + {$randomNumber2}";
