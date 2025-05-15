@@ -4,6 +4,19 @@ namespace BrainGames\Games;
 
 use function BrainGames\Engine\runGame;
 
+function isCalc(int $randNumber1, int $randNumber2, string $oper): int
+{
+    switch ($oper) {
+        case '+':
+            return $randNumber1 + $randNumber2;
+        case '-':
+            return $randNumber1 - $randNumber2;
+        case '*':
+            return $randNumber1 * $randNumber2;
+        default:
+            throw new \Exception('Invalid operator');
+    }
+}
 //Функция для генерации раунда игры "Калькулятор"
 function generateCalcRound(): array
 {
@@ -18,23 +31,9 @@ function generateCalcRound(): array
     $result = null;
     $question = '';
     // Генерация вопроса и ответа в зависимости от операции
-    switch ($randomOper) {
-        case '+':
-            $question = "{$randomNumber1} + {$randomNumber2}";
-            $result = $randomNumber1 + $randomNumber2;
-            break;
-        case '-':
-            $question = "{$randomNumber1} - {$randomNumber2}";
-            $result = $randomNumber1 - $randomNumber2;
-            break;
-        case '*':
-            $question = "{$randomNumber1} * {$randomNumber2}";
-            $result = $randomNumber1 * $randomNumber2;
-            break;
-        default:
-            echo "Unknown operation: {$randomOper}\n";
-            return [$question, $result];
-    }
+    $question = "{$randomNumber1} {$randomOper} {$randomNumber2}";
+    $result = isCalc($randomNumber1, $randomNumber2, $randomOper);
+    // Возвращаем вопрос и ответ
     return [$question, (string) $result];
 }
 
